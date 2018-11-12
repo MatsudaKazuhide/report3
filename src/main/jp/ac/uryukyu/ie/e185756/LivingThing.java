@@ -27,11 +27,6 @@ public class LivingThing {
 
     }
 
-    public int getAttack(){
-        return this.attack;
-
-    }
-
     public void attack(LivingThing opponent){
         if(this.dead == false) {
             int damage = (int) (Math.random() * attack);
@@ -48,18 +43,8 @@ public class LivingThing {
         }
     }
 
-    public void setName(String name){
-        this.name = name;
-
-    }
-
     public void setHitPoint(int hitPoint){
         this.hitPoint = hitPoint;
-
-    }
-
-    public void setAttack(int attack){
-        this.attack = attack;
 
     }
 
